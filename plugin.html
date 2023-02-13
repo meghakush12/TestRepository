@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title></title>
+    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<!-- <link rel="stylesheet" type="text/css" href="css/style.css"> -->
+</head>
+<!-- <script>
+	(function($) {
+		$.fn.targetBlank = function() {
+
+			alert('Working');
+
+		}
+	})(jQuery);
+</script> -->
+
+<body>
+	<a href="https://www.google.co.in/" target="_blank">Google</a>
+
+	<!-- <script type="text/javascript"
+			src="jquery-3.4.1.js"></script>
+	<script type="text/javascript"
+			src="plugin.js"></script>
+	<script type="text/javascript"
+			src="ext.js"></script> -->
+
+    <script>
+            var feature = {
+                publicA : "Hello",
+
+                method : function(){
+                    console.log(feature.publicA);
+                },
+
+                initSetting : function(tool){
+                    feature.tool = tool;
+                },
+
+                readSetting : function(){
+                    console.log(feature.tool);
+                },
+
+            }
+
+            feature.method();
+            feature.initSetting({test:'test'});
+            feature.readSetting();
+
+            
+// ------------------------------------------------------
+            var typeOfVariable = (function(){
+                var publicA = "Public variable";
+                var privetA = "Privet variable";
+
+                var changeprivetA = function(){
+                    privetA = "Modification in Privet vaiable";
+                };
+
+                var nowTestprivetA = function(){
+                    changeprivetA();
+                    console.log(privetA);
+                };
+
+                return {
+                    publicA: publicA,
+                    nowTestprivetA: nowTestprivetA
+
+                };
+
+            })(jQuery);
+
+            typeOfVariable.publicA;
+            typeOfVariable.nowTestprivetA();
+            
+        </script>
+</body>
+
+</html>
+
