@@ -63,11 +63,11 @@
             <label>
                 <input type="checkbox" class="selectAll" />Select All</label>
             <label for="one">
-                <input type="checkbox" class="selectOption" value="First checkbox"  onchange="toggleFillColor(this)" /> First checkbox</label>
+                <input type="checkbox" class="selectOption" value="First"  onchange="toggleFillColor(this)" /> First checkbox</label>
             <label for="two">
-                <input type="checkbox" class="selectOption" value="Second checkbox" onchange="toggleFillColor(this)"/> Second checkbox</label>
+                <input type="checkbox" class="selectOption" value="Second" onchange="toggleFillColor(this)"/> Second checkbox</label>
             <label for="three">
-                <input type="checkbox" class="selectOption" value="Third checkbox" onchange="toggleFillColor(this)" /> Third checkbox</label>
+                <input type="checkbox" class="selectOption" value="Third" onchange="toggleFillColor(this)" /> Third checkbox</label>
         </div>
     </div>
     
@@ -104,7 +104,6 @@
         if($('.selectOption:checked').length == $('.selectOption').length){
             $('.selectAll').prop('checked', true) ;
         }
-        console.log($('.selectOption').val());
     });
 
     
